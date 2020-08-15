@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adjective</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="material.indigo-pink.min.css">
+    <script defer src="material.min.js"></script>
+    <script src="validate.min.js"></script>
+    
+	<link rel="stylesheet" href="adjective.css">
+</head>
+<body>
+<script type="text/javascript">
+//adjectives below
+A=[
+['きれい<b>な</b>', 'чистый', 'чистая', 'чистое'],
+['きれい<b>な</b>', 'красивый', 'красивая', 'красивое'],
+['しずか<b>な</b>', 'тихий (спокойный)', 'тихая (спокойная)', 'тихое (спокойное)'],
+['にぎやか<b>な</b>', 'шумный (оживленный)', 'шумная (оживленная)', 'шумное (оживленное)'],
+['ゆうめい<b>な</b>', 'знаменитый', 'знаменитая', 'знаменитое'],
+['すてき<b>な</b>', 'чудесный (великолепный)', 'чудесная (великолепная)', 'чудесное (великолепное)'],
+['おおき<b>い</b>', 'большой', 'большая', 'большое'],
+['ちいさ<b>い</b>', 'маленький', 'маленькая', 'маленькое'],
+['ふる<b>い</b>', 'старый', 'старая', 'старое'],
+['あたらし<b>い</b>', 'новый', 'новая', 'новое'],
+['い<b>い</b>', 'хороший', 'хорошая', 'хорошее']
+];
+
+
+
+
+//nouns below
+N=[
+['こうえん', 'парк', 0],
+['たてもの', 'здание', 2],
+['えき', 'станция', 1],
+['えき', 'вокзал', 0],
+['にわ', 'двор', 0],
+['みち', 'улица', 1],
+['がっこう', 'школа', 1],
+['ぎんこう', 'банк', 0],
+['げきじょう', 'театр', 0],
+['えいがかん', 'кинотеатр', 0],
+['まち', 'город', 0]
+];
+
+
+
+</script>
+
+<script src="adjective.js" type="text/javascript"></script>
+<center>
+	<br/>
+<span id="adj1"> </span>&nbsp;&nbsp;&nbsp;<span id="noun1"> </span> <br/>
+<button id="button" onclick="generate()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Сгенерировать</button><br/>
+<span id="adj2"> </span> <span id="noun2"> </span>
+
+<br />
+<br />
+<br />
+
+<a href="index.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">На главную</a>
+
+</center>
+</body>
+</html>

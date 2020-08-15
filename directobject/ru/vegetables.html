@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Винительный падеж</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="material.indigo-pink.min.css">
+    <script defer src="material.min.js"></script>
+    <script src="validate.min.js"></script>
+    
+	<link rel="stylesheet" href="adjective.css">
+</head>
+<body>
+<script type="text/javascript">
+//verbs below
+A=[
+['<b>を</b>　たべません', 'не есть'],
+['<b>を</b>　たべます ', 'есть']
+];
+
+
+
+//nouns below
+N=[
+['やさい', 'овощи'],
+['きゅうり', 'огурец'],
+['トマト', 'помидор'],
+['なす', 'баклажан'],
+['まめ', 'бобы'],
+['キャベツ', 'капусту'],
+['たまねぎ', 'репчатый лук'],
+['レタス', 'салат латук'],
+['にんじん', 'морковь'],
+['だいこん', 'дайкон (японская редька)']
+];
+
+
+</script>
+
+<script src="adjective.js" type="text/javascript"></script>
+<center>
+	<br/>
+<span id="adj1"> </span>&nbsp;&nbsp;&nbsp;<span id="noun1"> </span> <br/>
+<button id="button" onclick="generate()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Сгенерировать</button><br/>
+<span id="adj2"> </span> <span id="noun2"> </span>
+
+<br />
+<br />
+<br />
+
+<a href="index.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">На главную</a>
+
+</center>
+</body>
+</html>

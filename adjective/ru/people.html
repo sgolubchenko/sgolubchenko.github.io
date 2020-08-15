@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adjective</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="material.indigo-pink.min.css">
+    <script defer src="material.min.js"></script>
+    <script src="validate.min.js"></script>
+    
+	<link rel="stylesheet" href="adjective.css">
+</head>
+<body>
+<script type="text/javascript">
+//adjectives below
+A=[
+['きれい<b>な</b>', 'красивый', 'красивая', 'красивое'],
+['おとなし<b>い</b>', 'спокойный', 'спокойная', 'спокойное'],
+['ゆうめい<b>な</b>', 'знаменитый', 'знаменитая', 'знаменитое'],
+['しんせつ<b>な</b>', 'вежливый', 'вежливая', 'вежливое'],
+['げんき<b>な</b>', 'здоровый (бодрый)', 'здоровая (бодрая)', 'здоровое (бодрое)'],
+['い<b>い</b>', 'хороший', 'хорошая', 'хорошее'],
+['いそがし<b>い</b>', 'занятый', 'занятая', 'занятое'],
+['かわい<b>い</b>', 'милый', 'милая', 'милое'],
+['まじめ<b>な</b>', 'серьезный', 'серьезная', 'серьезное'],
+['やさし<b>い</b>', 'добрый', 'добрая', 'доброе']
+];
+
+//nouns below
+N=[
+['がくせい', 'студент', 0],
+['せんせい', 'преподаватель', 0],
+['やくしゃ', 'актер', 0],
+['ぎし', 'инженер', 0],
+['てんいん', 'продавец', 0],
+['おんなのこ', 'девочка', 1],
+['おとこのこ', 'мальчик', 0],
+['おんなのひと', 'женщина', 1],
+['おとこのひと', 'мужчина', 0],
+['ひと', 'человек', 0]
+];
+
+
+</script>
+
+<script src="adjective.js" type="text/javascript"></script>
+<center>
+	<br/>
+<span id="adj1"> </span>&nbsp;&nbsp;&nbsp;<span id="noun1"> </span> <br/>
+<button id="button" onclick="generate()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Сгенерировать</button><br/>
+<span id="adj2"> </span> <span id="noun2"> </span>
+
+<br />
+<br />
+<br />
+
+<a href="index.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">На главную</a>
+
+</center>
+</body>
+</html>

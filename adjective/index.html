@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adjective</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="material.indigo-pink.min.css">
+    <script defer src="material.min.js"></script>
+    <script src="validate.min.js"></script>
+    
+	<link rel="stylesheet" href="adjective.css">
+
+</head>
+<body>
+<script type="text/javascript">
+//adjectives below
+A=[
+['きれい<b>な</b>', 'красивый, чистый'],
+['しずか<b>な</b>', 'тихий, спокойный'],
+['にぎやか<b>な</b>', 'шумный, оживленный'],
+['ゆうめい<b>な</b>', 'знаменитый'],
+['しんせつ<b>な</b>', 'учтивый, вежливый'],
+['げんき<b>な</b>', 'здоровый, бодрый'],
+['ひま<b>な</b>', 'свободный'],
+['べんり<b>な</b>', 'удобный'],
+['すてき<b>な</b>', 'чудесный, великолепный'],
+['おおき<b>い</b>', 'большой'],
+['ち<b>い</b>さ<b>い</b>', 'маленький'],
+['あたらし<b>い</b>', 'новый'],
+['ふる<b>い</b>', 'старый (не о возрасте)'],
+['<b>い</b><b>い</b>', 'хороший'],
+['わる<b>い</b>', 'плохой'],
+['あつ<b>い</b>', 'жаркий, горячий'],
+['さむ<b>い</b>', 'холодный (о температуре воздуха)'],
+['つめた<b>い</b>', 'холодный (при прикосновении)'],
+['むずかし<b>い</b>', 'трудный, сложный'],
+['やさし<b>い</b>', 'легкий, простой'],
+['たか<b>い</b>', 'высокий, дорогой'],
+['やす<b>い</b>', 'дешевый'],
+['ひく<b>い</b>', 'низкий'],
+['おもしろ<b>い</b>', 'интересный, веселый'],
+['お<b>い</b>し<b>い</b>', 'вкусный'],
+['<b>い</b>そがし<b>い</b>', 'занятый'],
+['たのし<b>い</b>', 'радостный']
+];
+
+//nouns below
+N=[
+['はな', 'цветок'],
+['さくら', 'сакура'],
+['やま', 'гора'],
+['まち', 'город'],
+['みち', 'дорога'],
+['みずうみ', 'озеро'],
+['たてもの', 'здание'],
+['こうえん', 'парк'],
+['くるま', 'машина'],
+['ちかてつ', 'метро'],
+['ところ', 'место'],
+['せいかつ', 'жизнь (образ жизни)'],
+['てんき', 'погода'],
+['かさ', 'зонт'],
+['たべもの', 'еда'],
+['おかし', 'сладости'],
+['コーヒー', 'кофе'],
+['こうちゃ', 'черный чай'],
+['みず', 'вода'],
+['しごと', 'работа'],
+['だいがく', 'университет'],
+['しゅくだい', 'домашнее задание'],
+['じしょ', 'словарь'],
+['がくせい', 'студент, ученик'],
+['つくえ', 'стол'],
+['えいが', 'фильм'],
+['しゃしん', 'фотография'],
+['ざっし', 'журнал'],
+['え', 'картина'],
+['じかん', 'время'],
+['ひ', 'день']
+];
+
+
+//code below
+var adj=0; var noun=0;
+function id(e){return document.getElementById(e);}
+function generate()
+{
+	adj=randomInteger(0,A.length-1);
+	noun=randomInteger(0,N.length-1);
+	id('adj1').innerHTML=A[adj][0];
+	id('noun1').innerHTML=N[noun][0];
+	id('adj2').innerHTML=' ';
+	id('noun2').innerHTML=' ';
+	id('button').innerHTML='Show translation';
+	id('button').setAttribute('onclick','showtranslation()');
+}
+function showtranslation()
+{
+	id('adj2').innerHTML=A[adj][1];
+	id('noun2').innerHTML=N[noun][1];
+	id('button').innerHTML='Generate new';
+	id('button').setAttribute('onclick','generate()');
+}
+
+
+function randomInteger(min, max) {
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+}
+
+</script>
+<center>
+<!--	<br/>
+<span id="adj1"> </span>&nbsp;&nbsp;&nbsp;<span id="noun1"> </span> <br/>
+<button id="button" onclick="generate()"class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Generate</button><br/>
+<span id="adj2"> </span> <span id="noun2"> </span>
+
+-->
+
+
+<a href="food.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Food &amp; Drinks</a><br/>
+<a href="places.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Places</a><br/>
+<a href="people.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">People</a><br/>
+<a href="furniture.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Furniture</a><br/>
+<a href="colours.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Colours &amp; Animals</a><br/>
+<a href="other.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Other</a><br/>
+
+
+</center>
+</body>
+</html>

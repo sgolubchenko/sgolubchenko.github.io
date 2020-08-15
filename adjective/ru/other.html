@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adjective</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="material.indigo-pink.min.css">
+    <script defer src="material.min.js"></script>
+    <script src="validate.min.js"></script>
+    
+	<link rel="stylesheet" href="adjective.css">
+</head>
+<body>
+<script type="text/javascript">
+//adjectives below
+A=[
+['ひま<b>な</b>', 'свободный', 'свободная', 'свободное'],
+['べんり<b>な</b>', 'удобный', 'удобная', 'удобное'],
+['すてき<b>な</b>', 'прекрасный', 'прекрасная', 'прекрасное'],
+['あたらし<b>い</b>', 'новый', 'новая', 'новое'],
+['ふる<b>い</b>', 'старый', 'старая', 'старое'],
+['い<b>い</b>', 'хороший', 'хорошая', 'хорошее'],
+['わる<b>い</b>', 'плохой', 'плохая', 'плохое'],
+['むずかし<b>い</b>', 'сложный', 'сложная', 'сложное'],
+['やさし<b>い</b>', 'легкий', 'легкая', 'легкое'],
+['おもしろ<b>い</b>', 'интересный (забавный)', 'интересная (забавная)', 'интересное (забавное)'],
+['いそがし<b>い</b>', 'занятый', 'занятая', 'занятое'],
+['たのし<b>い</b>', 'радостный', 'радостная', 'радостная']
+];
+
+//nouns below
+N=[
+['はな', 'цветок', 0],
+['さくら', 'сакура', 1],
+['くるま', 'машина', 1],
+['せいかつ', 'образ жизни', 0],
+['てんき', 'погода', 1],
+['かさ', 'зонт', 0],
+['しごと', 'работа', 1],
+['えいが', 'фильм', 0],
+['しゃしん', 'фотография', 1],
+['ざっし', 'журнал', 0],
+['じかん', 'время', 2],
+['ひ', 'день', 0]
+];
+
+
+</script>
+
+<script src="adjective.js" type="text/javascript"></script>
+<center>
+	<br/>
+<span id="adj1"> </span>&nbsp;&nbsp;&nbsp;<span id="noun1"> </span> <br/>
+<button id="button" onclick="generate()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Сгенерировать</button><br/>
+<span id="adj2"> </span> <span id="noun2"> </span>
+
+<br />
+<br />
+<br />
+
+<a href="index.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">На главную</a>
+
+</center>
+</body>
+</html>
